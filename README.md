@@ -1,5 +1,5 @@
 <p align="center">
-<img src="imagenes/logos.png">
+<img src="Imagenes/logos.PNG">
 </p>
 <h1 align="center">Instituto Tecnológico de Tijuana</h1>
 <h3 align="center">Depto de Sistemas y Computación</h3>
