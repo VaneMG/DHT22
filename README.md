@@ -14,7 +14,7 @@
 El DHT22 es un sensor de temperatura y humedad con unas prestaciones que lo acercan mucho a los de alta precisión. Lo puedes encontrar fácilmente en tiendas especializadas o grandes superficies, donde No products found.. Eso te permite no tener que depender de un sensor de temperatura y otro de humedad por separado, sino tenerlo todo integrado en un mismo dispositivo.
 
 <p align="center">
-<img width="400" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/DHT22.jpg" alt="logo">
+<img width="400" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/DHT22.jpg" alt="DHT22">
 </p>
 
 Sus principales características generales son:
@@ -37,7 +37,7 @@ Si hablamos de sus prestaciones leyendo humedad relativa:
 El diagrama de conexión se muestra en la imagen de abajo.
 
 <p align="center">
-<img width="400" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/Raspberry%20pi%20pico.PNG" alt="logo">
+<img width="400" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/Raspberry%20pi%20pico.PNG" alt="Raspberry">
 </p>
 
 - El primer pin para ambos sensores es un pin de fuente de alimentación (Vcc). Conéctelo con el pin de 3,3 voltios de Raspberry Pi Pico.
@@ -92,7 +92,7 @@ while True:
 Nos mostrará el siguiente resultado
  
 <p align="center">
-<img width="400" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/Resultado.PNG" alt="logo">
+<img width="400" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/Resultado.PNG" alt="Resultado">
 </p>
 
 https://wokwi.com/projects/358588113192635393
