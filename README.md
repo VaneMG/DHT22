@@ -1,5 +1,5 @@
 <p align="center">
-<img width="700" src="https://github.com/tectijuana/1_25py-VaneMG/blob/main/Images/logos.PNG" alt="logo">
+<img width="700" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/logos.PNG" alt="logo">
 </p>
 <h1 align="center">Instituto Tecnológico de Tijuana</h1>
 <h3 align="center">Depto de Sistemas y Computación</h3>
