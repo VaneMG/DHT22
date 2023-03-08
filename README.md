@@ -1,4 +1,15 @@
-# DHT22:  sensor de temperatura y humedad
+<p align="center">
+<img width="700" src="https://github.com/tectijuana/1_25py-VaneMG/blob/main/Images/logos.PNG" alt="logo">
+</p>
+<h1 align="center">Instituto Tecnológico de Tijuana</h1>
+<h3 align="center">Depto de Sistemas y Computación</h3>
+<h3 align="center">Ing. En Sistemas Computacionales</h3>
+<h3 align="center">DHT22:  sensor de temperatura y humedad </h3>
+<h3 align="center">Autor : Millán Guízar Arely Vanessa</h3>
+<h3 align="center">Repositorio: DHT22</h3>
+<h3 align="center">Fecha de revisión:   00/00/00</h3>
+
+<h1 align="center">DHT22:  sensor de temperatura y humedad</h1>
 
 El DHT22 es un sensor de temperatura y humedad con unas prestaciones que lo acercan mucho a los de alta precisión. Lo puedes encontrar fácilmente en tiendas especializadas o grandes superficies, donde No products found.. Eso te permite no tener que depender de un sensor de temperatura y otro de humedad por separado, sino tenerlo todo integrado en un mismo dispositivo.
 
@@ -21,7 +32,7 @@ Si hablamos de sus prestaciones leyendo humedad relativa:
 - Precisión: ±2%RH, a una temperatura de 25ºC.
 - Tiempo de respuesta: <5 segundos, es decir, de media, tarda menos de 5 segundos en reflejar un cambio de humedad relativa real en el entorno. Además, para darse esta afirmación, los tests indicaron que la velocidad del aire debe ser de 1 m/s.
 
-### Interfaz con Raspberry Pi Pico
+<h2 align="center">Interfaz con Raspberry Pi Pico</h2>
 
 El diagrama de conexión se muestra en la imagen de abajo.
 
@@ -34,7 +45,7 @@ El diagrama de conexión se muestra en la imagen de abajo.
 - El tercer pin no se utiliza
 - Conecte el cuarto pin (GND) al pin de tierra de la placa
 
-### Código de MicroPython
+<h2 align="center">Código de MicroPython</h2>
 
 ```python
 from machine import Pin
@@ -51,7 +62,8 @@ while True:
     sleep(2)
 ```
 
-### Función del código
+<h2 align="center">Función del código</h2>
+
 En primer lugar, importamos Pin, dht y módulo de suspensión para que podamos acceder a sus métodos a través de sus clases definidas.
 
 ```python
