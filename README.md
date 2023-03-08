@@ -3,7 +3,7 @@
 El DHT22 es un sensor de temperatura y humedad con unas prestaciones que lo acercan mucho a los de alta precisión. Lo puedes encontrar fácilmente en tiendas especializadas o grandes superficies, donde No products found.. Eso te permite no tener que depender de un sensor de temperatura y otro de humedad por separado, sino tenerlo todo integrado en un mismo dispositivo.
 
 <p align="center">
-<img width="700" src="https://github.com/tectijuana/1_25py-VaneMG/blob/main/Images/logos.PNG" alt="logo">
+<img width="400" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/DHT22.jpg" alt="logo">
 </p>
 
 Sus principales características generales son:
@@ -21,9 +21,22 @@ Si hablamos de sus prestaciones leyendo humedad relativa:
 - Precisión: ±2%RH, a una temperatura de 25ºC.
 - Tiempo de respuesta: <5 segundos, es decir, de media, tarda menos de 5 segundos en reflejar un cambio de humedad relativa real en el entorno. Además, para darse esta afirmación, los tests indicaron que la velocidad del aire debe ser de 1 m/s.
 
+### Interfaz con Raspberry Pi Pico
+
+El diagrama de conexión se muestra en la imagen de abajo.
+
+<p align="center">
+<img width="400" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/Raspberry%20pi%20pico.PNG" alt="logo">
+</p>
+
+- El primer pin para ambos sensores es un pin de fuente de alimentación (Vcc). Conéctelo con el pin de 3,3 voltios de Raspberry Pi Pico.
+- Los datos de salida son el pin a través del cual obtenemos muestras de temperatura y humedad del sensor DHT. Conecte este pin con GPIO2 de Raspberry Pi Pico y también conecte el pin de datos con una resistencia pull-up de 10k. Pero también puede usar cualquier pin digital de Raspberry Pi Pico. Se utiliza una resistencia Pull-up para mantener el pin de datos alto para una comunicación adecuada entre el microcontrolador y el sensor.
+- El tercer pin no se utiliza
+- Conecte el cuarto pin (GND) al pin de tierra de la placa
+
 ### Código de MicroPython
-´´´
-python
+
+```python
 from machine import Pin
 from time import sleep
 import dht
@@ -36,39 +49,38 @@ while True:
     hum = sensor.humidity()
     print("Temperature: {}°C   Humidity: {:.0f}% ".format(temp, hum))
     sleep(2)
-´´´
+```
 
 ### Función del código
 En primer lugar, importamos Pin, dht y módulo de suspensión para que podamos acceder a sus métodos a través de sus clases definidas.
 
+```python
 from machine import Pin
 from time import sleep
 import dht
+```
 
 A continuación, definiremos un objeto dht llamado 'sensor' y le asignaremos el pin de datos. Aquí estamos utilizando el sensor DHT22 con pin de datos conectado en GPIO2.
 
+```python
 sensor = dht.DHT22(Pin(2))
+```
 
 Dentro del bucle infinito, obtendremos la lectura de temperatura y humedad y la guardaremos en 'temp' y 'hum' respectivamente. Estos se imprimirán en la consola de shell después de un retraso de 2 segundos.
 
+```python
 while True:
     sensor.measure()
     temp = sensor.temperature()
     hum = sensor.humidity()
     print("Temperature: {}°C   Humidity: {:.0f}% ".format(temp, hum))
     sleep(2)
+ ```
     
-### Interfaz con Raspberry Pi Pico
-
-El diagrama de conexión se muestra en la imagen de abajo.
-
-imagen
-
-- El primer pin para ambos sensores es un pin de fuente de alimentación (Vcc). Conéctelo con el pin de 3,3 voltios de Raspberry Pi Pico.
-- Los datos de salida son el pin a través del cual obtenemos muestras de temperatura y humedad del sensor DHT. Conecte este pin con GPIO2 de Raspberry Pi Pico y también conecte el pin de datos con una resistencia pull-up de 10k. Pero también puede usar cualquier pin digital de Raspberry Pi Pico. Se utiliza una resistencia Pull-up para mantener el pin de datos alto para una comunicación adecuada entre el microcontrolador y el sensor.
-- El tercer pin no se utiliza
-- Conecte el cuarto pin (GND) al pin de tierra de la placa
-
 Nos mostrará el siguiente resultado
  
-imagen
+<p align="center">
+<img width="400" src="https://github.com/VaneMG/DHT22/blob/main/Imagenes/Resultado.PNG" alt="logo">
+</p>
+
+https://wokwi.com/projects/358588113192635393
