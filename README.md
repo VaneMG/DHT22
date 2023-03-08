@@ -2,7 +2,9 @@
 
 El DHT22 es un sensor de temperatura y humedad con unas prestaciones que lo acercan mucho a los de alta precisión. Lo puedes encontrar fácilmente en tiendas especializadas o grandes superficies, donde No products found.. Eso te permite no tener que depender de un sensor de temperatura y otro de humedad por separado, sino tenerlo todo integrado en un mismo dispositivo.
 
-imagen
+<p align="center">
+<img width="700" src="https://github.com/tectijuana/1_25py-VaneMG/blob/main/Images/logos.PNG" alt="logo">
+</p>
 
 Sus principales características generales son:
 - Alimentación: 3.3v – 5.5v, tomando como valor recomendado 5v.
