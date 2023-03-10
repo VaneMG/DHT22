@@ -11,7 +11,7 @@
 
 <h1 align="center">DHT22:  sensor de temperatura y humedad</h1>
 
-El DHT22 es un sensor de temperatura y humedad con unas prestaciones que lo acercan mucho a los de alta precisión. Lo puedes encontrar fácilmente en tiendas especializadas o grandes superficies, donde No products found.. Eso te permite no tener que depender de un sensor de temperatura y otro de humedad por separado, sino tenerlo todo integrado en un mismo dispositivo.
+DHT22 es un sensor de temperatura y humedad de alta precisión. También es conocido como AM2302. Este sensor utiliza un termistor para medir la temperatura ambiente y un sensor capacitivo para medir la humedad relativa del aire. El DHT22 es un sensor digital y se comunica con el microcontrolador a través de una interfaz de un solo cable. Es ampliamente utilizado en proyectos de electrónica y automatización para monitorear la temperatura y la humedad del ambiente. También se puede utilizar en proyectos de domótica para controlar el clima en una casa o edificio, en invernaderos para controlar el clima para el cultivo de plantas, y en proyectos de monitoreo ambiental para medir la temperatura y la humedad del aire.
 
 <p align="center">
 <img width="400" src="Imagenes/DHT22.jpg" alt="DHT22">
