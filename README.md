@@ -22,16 +22,6 @@ Sus principales características generales son:
 - Resolución decimal, es decir, los valores tanto para  humedad como para temperatura serán números con una cifra decimal.
 - Tiempo de muestreo: 2 segundos, es decir, sólo nos puede ofrecer datos cada 2 segundos.
 
-En cuanto a sus prestaciones leyendo temperatura:
-- Rango de valores desde -40ºC hasta 80ºC de temperatura.
-- Precisión: ±0.5ºC, ±1ºC como máximo en condiciones adversas.
-- Tiempo de respuesta: <10 segundos, es decir, de media, tarda menos de 10 segundos en reflejar un cambio de temperatura real en el entorno.
-
-Si hablamos de sus prestaciones leyendo humedad relativa:
-- Rango de valores desde 0% hasta 99.9% de Humedad Relativa.
-- Precisión: ±2%RH, a una temperatura de 25ºC.
-- Tiempo de respuesta: <5 segundos, es decir, de media, tarda menos de 5 segundos en reflejar un cambio de humedad relativa real en el entorno. Además, para darse esta afirmación, los tests indicaron que la velocidad del aire debe ser de 1 m/s.
-
 <h2 align="center">Interfaz con Raspberry Pi Pico</h2>
 
 El diagrama de conexión se muestra en la imagen de abajo.
